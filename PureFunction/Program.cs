@@ -10,7 +10,13 @@
             Console.WriteLine(result); 
 
             int result2 = Subtract(10, 5);
-            Console.WriteLine(result2); 
+            Console.WriteLine(result2);
+
+            int randomNumber = GenerateRandomNumber();
+            Console.WriteLine($"Random Number: {randomNumber}");
+
+
+
         }
 
        
@@ -18,6 +24,12 @@
         {
             return a - b;
         }
+        
+         static  int GenerateRandomNumber()
+        {
+            return new Random().Next();
+        }
+
     }
 
 }
